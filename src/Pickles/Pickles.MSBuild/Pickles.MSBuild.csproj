@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>PicklesDoc.Pickles.MSBuild</RootNamespace>
     <AssemblyName>PicklesDoc.Pickles.MSBuild.Tasks</AssemblyName>

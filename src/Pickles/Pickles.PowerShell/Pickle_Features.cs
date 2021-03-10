@@ -157,11 +157,11 @@ namespace PicklesDoc.Pickles.PowerShell
 
             if (fileSystem.Path.IsPathRooted(directory))
             {
-                result = fileSystem.DirectoryInfo.FromDirectoryName(directory);
+                result = (DirectoryInfoBase)fileSystem.DirectoryInfo.FromDirectoryName(directory);
             }
             else
             {
-                result = fileSystem.DirectoryInfo.FromDirectoryName(
+                result = (DirectoryInfoBase)fileSystem.DirectoryInfo.FromDirectoryName(
                     fileSystem.Path.Combine(currentFileSystemLocation.Path, directory));
             }
 

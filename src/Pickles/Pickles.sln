@@ -14,36 +14,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles", "Pickles\Pickles.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles.Test", "Pickles.Test\Pickles.Test.csproj", "{8BD9FCD2-7ED5-46B5-B6A4-7FA3775E159F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runners", "Runners", "{4E977674-6919-4F15-A6E3-37BFAC18C7E5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles.MSBuild", "Pickles.MSBuild\Pickles.MSBuild.csproj", "{67DD16BD-E76B-475E-878C-7F54D9358730}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runners", "Runners", "{4E977674-6919-4F15-A6E3-37BFAC18C7E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles.CommandLine", "Pickles.CommandLine\Pickles.CommandLine.csproj", "{A4EBBB5F-A18D-46D2-9ADE-2B90BD48CEC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles.PowerShell", "Pickles.PowerShell\Pickles.PowerShell.csproj", "{AD9F6DD1-5C76-45C9-9FF9-DAE37DB7B2D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickles.UserInterface", "Pickles.UserInterface\Pickles.UserInterface.csproj", "{F3768CCA-00C2-4280-9F8D-4585B5E214B1}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Pickles.BaseDhtmlFiles", "Pickles.BaseDhtmlFiles\", "{1F17FEE9-0033-42CE-9E91-48D3B2CCD34A}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/Pickles.BaseDhtmlFiles"
-		Debug.AspNetCompiler.PhysicalPath = "Pickles.BaseDhtmlFiles\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Pickles.BaseDhtmlFiles\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/Pickles.BaseDhtmlFiles"
-		Release.AspNetCompiler.PhysicalPath = "Pickles.BaseDhtmlFiles\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Pickles.BaseDhtmlFiles\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "52000"
-		SlnRelativePath = "Pickles.BaseDhtmlFiles\"
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{34E7297F-30A1-4AB6-99A7-16142AD71991}"
 	ProjectSection(SolutionItems) = preProject
@@ -127,10 +106,6 @@ Global
 		{8BD9FCD2-7ED5-46B5-B6A4-7FA3775E159F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BD9FCD2-7ED5-46B5-B6A4-7FA3775E159F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BD9FCD2-7ED5-46B5-B6A4-7FA3775E159F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67DD16BD-E76B-475E-878C-7F54D9358730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67DD16BD-E76B-475E-878C-7F54D9358730}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67DD16BD-E76B-475E-878C-7F54D9358730}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67DD16BD-E76B-475E-878C-7F54D9358730}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4EBBB5F-A18D-46D2-9ADE-2B90BD48CEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4EBBB5F-A18D-46D2-9ADE-2B90BD48CEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4EBBB5F-A18D-46D2-9ADE-2B90BD48CEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -143,10 +118,6 @@ Global
 		{F3768CCA-00C2-4280-9F8D-4585B5E214B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3768CCA-00C2-4280-9F8D-4585B5E214B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3768CCA-00C2-4280-9F8D-4585B5E214B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F17FEE9-0033-42CE-9E91-48D3B2CCD34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F17FEE9-0033-42CE-9E91-48D3B2CCD34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F17FEE9-0033-42CE-9E91-48D3B2CCD34A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F17FEE9-0033-42CE-9E91-48D3B2CCD34A}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{599BCF0C-8FB4-4727-A902-160C4E7D8FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{599BCF0C-8FB4-4727-A902-160C4E7D8FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{599BCF0C-8FB4-4727-A902-160C4E7D8FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -155,6 +126,10 @@ Global
 		{C8BB0382-612C-4ECD-9388-CB996E3493A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8BB0382-612C-4ECD-9388-CB996E3493A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8BB0382-612C-4ECD-9388-CB996E3493A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DD16BD-E76B-475E-878C-7F54D9358730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DD16BD-E76B-475E-878C-7F54D9358730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DD16BD-E76B-475E-878C-7F54D9358730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DD16BD-E76B-475E-878C-7F54D9358730}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55382AFC-E050-4DF7-AA4F-0ABA71E2E169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55382AFC-E050-4DF7-AA4F-0ABA71E2E169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55382AFC-E050-4DF7-AA4F-0ABA71E2E169}.Release|Any CPU.ActiveCfg = Release|Any CPU

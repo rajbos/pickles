@@ -20,6 +20,7 @@
 
 using System;
 using System.IO;
+using System.IO.Abstractions;
 using System.IO.Abstractions.TestingHelpers;
 using System.Linq;
 using NFluent;
@@ -41,7 +42,7 @@ namespace PicklesDoc.Pickles.Test
 
             var report = new ParsingReport();
 
-            featureNodeFactory.Create(null, FileSystem.FileInfo.FromFileName(@"c:\test.feature"), report);
+            featureNodeFactory.Create(null, (FileSystemInfoBase)FileSystem.FileInfo.FromFileName(@"c:\test.feature"), report);
 
             Check.That(report.First()).Contains(@"c:\test.feature");
         }
@@ -55,7 +56,7 @@ namespace PicklesDoc.Pickles.Test
 
             var report = new ParsingReport();
 
-            featureNodeFactory.Create(null, FileSystem.FileInfo.FromFileName(@"c:\test.md"), report);
+            featureNodeFactory.Create(null, (FileSystemInfoBase)FileSystem.FileInfo.FromFileName(@"c:\test.md"), report);
 
             Check.That(report.Count).Equals(1);
             Check.That(report.First()).Equals(@"Error parsing the Markdown file located at c:\test.md. Error: Error parsing text.");
@@ -87,7 +88,7 @@ namespace PicklesDoc.Pickles.Test
 
             var report = new ParsingReport();
 
-            featureNodeFactory.Create(null, FileSystem.FileInfo.FromFileName(@"c:\test.dll"), report);
+            featureNodeFactory.Create(null, (FileSystemInfoBase)FileSystem.FileInfo.FromFileName(@"c:\test.dll"), report);
 
             Check.That(report.First()).Contains(@"c:\test.dll");
         }
@@ -99,7 +100,7 @@ namespace PicklesDoc.Pickles.Test
 
             var report = new ParsingReport();
 
-            featureNodeFactory.Create(null, new BogusFileSystemInfoBase { fullName = "Totally Bad Name"}, report);
+            featureNodeFactory.Create(null, new BogusFileSystemInfoBase(null) { fullName = "Totally Bad Name"}, report);
 
             Check.That(report.First()).Contains(@"Totally Bad Name");
         }
@@ -107,6 +108,9 @@ namespace PicklesDoc.Pickles.Test
         private class BogusFileSystemInfoBase : System.IO.Abstractions.FileSystemInfoBase
         {
             internal string fullName;
+
+            public BogusFileSystemInfoBase(IFileSystem fileSystem) : base(fileSystem)
+            { }
 
             public override void Delete()
             {

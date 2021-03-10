@@ -139,11 +139,11 @@ namespace PicklesDoc.Pickles.Test.ObjectModel
                 null,
                 new[] { this.factory.CreateStep("Given", "unimportant step") },
                 null);
+
             var gherkinDocument = this.factory.CreateGherkinDocument(
                 "My Feature",
                 "My Description",
-                scenarioDefinitions: new G.ScenarioDefinition[] { scenarioOutline });
-
+                scenarioDefinitions: new G.Scenario[] { scenarioOutline });
 
             var mapper = this.factory.CreateMapper();
 
